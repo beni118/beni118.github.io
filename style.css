@@ -89,6 +89,11 @@ button {
     white-space: nowrap;
 }
 
+.item:hover {
+    -webkit-filter: drop-shadow(1vh 1vh 2vh white);
+    transition:-webkit-filter .2s;
+}
+
 .icon { flex-shrink: 0; margin-left:1vw;}
 
 .label { padding-left: 3vw; font-size:1.3vw;}
