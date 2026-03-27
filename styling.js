@@ -18,7 +18,6 @@ console.log(cookies);
 var topBar = document.getElementById("topBar");
 var sideBar = document.getElementById("sideBar");
 var background = document.getElementById("background");
-var divider = document.getElementById("divider");
 
 topBar.style.backgroundColor = cookies.secondaryColor;
 topBar.style.borderBottomColor = cookies.accentColor;
@@ -26,5 +25,4 @@ topBar.style.borderBottomColor = cookies.accentColor;
 sideBar.style.backgroundColor = cookies.secondaryColor;
 
 background.style.backgroundColor = cookies.mainColor;
-
-divider.style.borderTopColor = cookies.accentColor;
+background.style.color = cookies.fontColor;
