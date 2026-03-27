@@ -91,7 +91,7 @@ button {
 
 .icon { flex-shrink: 0; margin-left:1vw;}
 
-.label { font-size: 200%; padding-left: 3vw;}
+.label { padding-left: 3vw; font-size:1.3vw;}
 
 .logo {
     margin-left:3.4vw;
