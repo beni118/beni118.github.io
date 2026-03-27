@@ -4,21 +4,20 @@
         <link rel="stylesheet" href="../../style.css">
     </head>
     <body id="background" style="background-color: #f37310;">
-        <span id="sideBar" style="background-color: coral;">
-            <button class="menuButton" id="mainMenu" onclick="location.href='../../index.html'"><img src="../../Logo.png" alt="Main Menu"><h1>Main Menu</h1></button>
-            <button class="menuButton" id="settings" onclick="location.href='../../settings.html'"><img src="../../Settings.png" alt="Settings"><h1>Settings</h1></button>
-            <hr id="divider">
-            <button class="menuButton" id="Pokemon" onclick="location.href='../Pokemon/Pokemon.html'"><img src="../../Pokemon.png" alt="Pokemon"><h1>Pokemon</h1></button>
-            <button class="menuButton" id="Mario" onclick="location.href='../Mario/Mario.html'"><img src="../../Mario.png" alt="Mario"><h1>Mario</h1></button>
-            <button class="menuButton" id="Minecraft"><img src="../../Minecraft.png" alt="Minecraft"><h1>Minecraft</h1></button>
-            <button class="menuButton" id="Zelda"><img src="../../Zelda.png" alt="Zelda"><h1>Zelda</h1></button>
-            <button class="menuButton" id="Flash"><img src="../../Flash.png" alt="Flash"><h1>Flash</h1></button>
-        </span>
-
         <span id="topBar" style="background-color: coral; border-bottom-color: white;">
             <img src="../../Logo.png" alt="BeniGames" class="logo">
             <h1>Zelda</h1>
         </span>
+
+        <div class="wrap">
+            <div class="sidebar" style="background-color: coral;">
+                <div class="item"><span class="icon"><img src="../../Logo.png" onclick="location.href='../../index.html'"></span><span class="label">Main Menu</span></div>
+                <div class="item"><span class="icon"><img src="../../Settings.png" onclick="location.href='../../settings.html'"></span><span class="label">Settings</span></div>
+                <div class="item"><span class="icon"><img src="../../Mario.png" onclick="location.href='../Mario/Mario.html'"></span><span class="label">Mario</span></div>
+                <div class="item"><span class="icon"><img src="../../Pokemon.png" onclick="location.href='../Pokemon/Pokemon.html'"></span><span class="label">Pokemon</span></div>
+                <div class="item"><span class="icon"><img src="../../Zelda.png"></span><span class="label">Zelda</span></div>
+            </div>
+        </div>
 
         <div class="Content grid" id="gameGrid">
 
