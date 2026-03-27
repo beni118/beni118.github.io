@@ -1,0 +1,153 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+button {
+    background: transparent;
+    border:transparent;
+}
+
+#sideBar {
+    overflow:scroll;
+    overflow-x: hidden;
+    margin-top:11.4vh;
+    height:100%;
+    width:9vw;
+    position:absolute;
+    padding-left: 5vw;
+    padding-top: 4vh;
+    transition: width, .15s ease;
+}
+
+#topBar {
+    max-height:12vh;
+    width:100vw;
+    margin-top:0;
+    position:absolute;
+    border-bottom-style: solid;
+    border-bottom-width: .6vh;
+    display: inline;
+}
+
+.menuButton > h1 {
+    margin-left: 3vw;
+    margin-top:-4vh;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    text-wrap: nowrap;
+    transition: opacity, .1s ease;
+}
+
+#topBar > h1 {
+    margin-left: 4.5vw;
+    position:absolute;
+    display: inline;
+    font-size:5vh;
+}
+
+#sideBar:hover
+h1 {
+    opacity: 100%;
+}
+
+#sideBar:hover {
+    width: 17vw;
+}
+
+#sideBar:hover ~ .Content {
+    margin-left:21.5vw;
+    width:75.5vw;
+}
+
+.menuButton {
+    position:relative;
+    padding-bottom: 4vh;
+    width:3vw;
+    display: block;
+}
+
+.logo {
+    margin-left:3.4vw;
+    margin-top:.6vh;
+    width:5.6vw;
+    height:9.956vh;
+}
+
+li {
+    font-size:2vh;
+    padding-bottom: .8vh;
+}
+
+.indented {
+    padding-left:2vw;
+}
+
+h2 {
+    font-weight:normal;
+}
+
+.Content {
+    position: absolute;
+    margin-left:14vw;
+    margin-top:12.6vh;
+    width:80vw;
+    max-height:87.4vh;
+    padding-left:3vw;
+    padding-top:2vh;
+    transition: margin-left .15s, width, .15s;
+}
+
+.ColorApply {
+    margin-top: 2vh;
+    background-color: white;
+    display: block;
+    padding: 1vh;
+    width:6vw;
+}
+
+hr {
+    border: none;
+    border-top: 1vh white solid;
+    margin-left:-5vw;
+    margin-top:-2vh;
+    padding-bottom: 2vh;
+}
+
+.grid {
+    display: inline;
+}
+
+.gameCover {
+    height: 30vh;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    margin-right: 1vw;
+    -webkit-filter: none;
+    transition:-webkit-filter .2s;
+}
+
+.gameCover:hover {
+    -webkit-filter: drop-shadow(1vh 1vh .7vh white);
+    transition:-webkit-filter .2s;
+}
+
+.favoriteButton {
+    width:4vw;
+    display: inline;
+    -webkit-filter: grayscale(100%);
+}
+
+.favorited {
+    width:4vw;
+    display: inline;
+}
+
+.favorited:hover {
+    -webkit-filter:grayscale(100%);
+}
+
+.favoriteButton:hover {
+    -webkit-filter:grayscale(0%);
+}
